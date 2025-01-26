@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQUETA SEMÁNTICA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <style>
+        #contenedor {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        header {
+            width: 100%;
+            height: 200px;
+            background-color: aquamarine;
+            background-repeat: no-repeat;
+            background-image: url("{{ url_for('static', filename='Goku/logodragon.webp') }}"), url("{{ url_for('static', filename='Goku/gk.jpg') }}");
+            background-size: 40% ,100%;
+            background-position: 50%,left;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            margin-bottom: 15px;
+        }
+
+        section {
+            width: 70%;
+            background-color: rgb(255, 255, 255);
+            float: left;
+        }
+
+        article {
+            height: 450px;
+            background-color: antiquewhite;
+            width: 46%;
+            float: left;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 15px;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        aside {
+            height: 970px;
+            width: 29.3%;
+            margin: 5px;
+            background-color: rgba(73, 0, 107, 0.445);
+            float: left;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 5px;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: rgba(162, 0, 255, 0.116);
+            float: left;
+        }
+
+        img {
+            width: 100%;
+            float: right;
+            padding-bottom: 15px;
+        }
+
+        a {
+            margin: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <a href="{{ url_for('menu') }}" class="btn btn-secondary my-2">ATRAS</a>
+    <div id="contenedor">
+        <header>
+
+        </header>
+        <section>
+            <article>
+                <img src="{{ url_for('static', filename='Goku/gk.jpg') }}">
+                <h4>Goku transformaciones</h4>
+                <p>Los Saiyajin son seres humanoides originarios del planeta Sadala, de contextura física musculosa y
+                    temperamento agresivo y combativo. Tienen características físicas que los distinguen de los humanos:
+                </p>
+            </article>
+            <article>
+                <img src="{{ url_for('static', filename='Goku/smstg.gif') }}">
+                <h4>Goku transformaciones</h4>
+                <p>Los Saiyajin son seres humanoides originarios del planeta Sadala, de contextura física musculosa y
+                    temperamento agresivo y combativo. Tienen características físicas que los distinguen de los humanos:
+                </p>
+            </article>
+            <article>
+                <img src="{{ url_for('static', filename='Goku/ggs.gif') }}">
+                <h4>Goku transformaciones</h4>
+                <p>Los Saiyajin son seres humanoides originarios del planeta Sadala, de contextura física musculosa y
+                    temperamento agresivo y combativo. Tienen características físicas que los distinguen de los humanos:
+                </p>
+            </article>
+            <article>
+                <img src="{{ url_for('static', filename='Goku/gss.jfif') }}">
+                <h4>Goku transformaciones</h4>
+                <p>Los Saiyajin son seres humanoides originarios del planeta Sadala, de contextura física musculosa y
+                    temperamento agresivo y combativo. Tienen características físicas que los distinguen de los humanos:
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h2>Vegeta</h2>
+            <img src="{{ url_for('static', filename='Goku/vgeg.png') }}">
+        </aside>
+        <footer>
+            <h2>PIE DE PÁGINA</h2>
+        </footer>
+    </div>
+</body>
+
+</html>

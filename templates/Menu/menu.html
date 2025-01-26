@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú informático</title>
+    <style>
+
+        #cabezera{
+            width: 75vw;
+            height: 200px;
+            margin: 0 auto;
+            background: red;
+            background-image: url("{{ url_for('static', filename='Menu/lech.gif') }}"),
+                              url("{{ url_for('static', filename='Menu/lechu.gif') }}"),
+                              url("{{ url_for('static', filename='Menu/bosque.jpg') }}");
+            background-position: right,left,center;
+            background-size: 15%,18%,100%;
+            background-repeat: no-repeat,no-repeat;
+        }
+
+        #contenedor {
+            width: 75vw;
+            height: 70vh;
+            margin: 0 auto;
+            
+        }
+
+        #izq {
+            width: 30%;
+            height: 100%;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            background-image: url("{{ url_for('static', filename='Menu/fondo.avif') }}");
+            background-size: 150% 100%;
+            
+        }
+
+        #izq:hover{
+            background-size: 200% 150%;
+            transition: 4s;
+        }
+
+        #sub {
+            width: 70%;
+            height: 50%;
+            background: rgb(255, 230, 0);
+            float: left;
+            background-image: url("{{ url_for('static', filename='Menu/montañas.jpg') }}");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        #sub:hover{
+            background-image: url("{{ url_for('static', filename='Menu/montañas2.webp') }}");
+            background-size: 100% 100%;
+            transition: 4s;
+
+        }
+
+        #inf{
+            width: 70%;
+            height: 50%;
+            background: rgb(0, 255, 76);
+            float: left;
+            background-image: url("{{ url_for('static', filename='Menu/mar1.jpg') }}");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        #inf:hover{
+            background-image: url("{{ url_for('static', filename='Menu/mar2jpg.webp') }}");
+            background-size: 100% 130%;
+            transition: 4s;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(10, 255, 194);
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        a:hover{
+            color: rgb(251, 255, 0)
+        }
+
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            padding-top: 5%;
+        }
+
+        ul{
+            width: 75vw;
+            margin: 0 auto;
+        }
+
+        ul > li {
+            list-style: none;
+            display: inline;
+            margin:  10px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        
+        }
+
+        li:hover{
+            color: aqua;
+            background-color: red;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cabezera">
+        <h1>VIAJES EN LA NOCHE</h1>
+    </div>
+    <ul>
+        <li>INICIO</li>
+        <li>CONTINENTES</li>
+        <li>OCEANOS</li>
+        <li>ASTRONOMÍA</li>
+        <li>DESIERTOS</li>
+        <li>MONTAÑAS</li>
+        
+    </ul>
+    <div id="contenedor">
+        <div id="izq">
+            <br><br><br>
+            <a href="{{ url_for('principal') }}">PRINCIPAL</a>
+            <a href="{{ url_for('flexbox') }}">FLEXBOX</a><br>
+            <a href="{{ url_for('halloween') }}">HALLOWEEN</a><br>
+            <a href="{{ url_for('goku') }}">GOKU</a><br>
+            <a href="{{ url_for('animacion') }}">ANIMACION</a><br>
+            <a href="{{ url_for('menu2') }}">MENU2</a><br>
+        
+
+        </div>
+        <div id="sub">
+
+    
+        </div>
+        <div id="inf">
+
+
+        </div>
+
+    </div>
+</body>
+</html>

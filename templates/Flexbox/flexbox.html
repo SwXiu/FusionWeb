@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Flexbox/favicon1.png') }}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <style>
+        #contenedor {
+            width: 90vw;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        header {
+            width: 100%;
+            height: 250px;
+            background-color: rgb(145, 0, 0);
+            color: white;
+            font-size: 2.3em;
+            text-align: center;
+            padding-top: 50px;
+            background-image: url("{{ url_for('static', filename='Flexbox/gen.webp') }}");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 100% 10%;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            margin-bottom: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        article {
+            width: 450px;
+            height: 350px;
+            background-color: blanchedalmond;
+            padding: 5px;
+            text-align: center;
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('menu') }}" class="btn btn-secondary my-2">ATRAS</a>
+    <div id="contenedor">
+        <header>
+        </header>
+        <section>
+            <article>
+                <img src="{{ url_for('static', filename='Flexbox/diluc.jpg') }}">
+                <h4>Diluc</h4>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='Flexbox/raid.jpg') }}">
+                <h4>Raiden Shogun</h4>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='Flexbox/zhon.webp') }}">
+                <h4>Zhon Li</h4>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='Flexbox/venti.webp') }}">
+                <h4>Venti</h4>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='Flexbox/hutao.jpg') }}">
+                <h4>Hu Tao</h4>
+            </article>
+
+            <article>
+                <img src="{{ url_for('static', filename='Flexbox/keqin.webp') }}">
+                <h4>Ke Qing</h4>
+            </article>
+
+            <article>
+                <img src="">
+                <h4></h4>
+            </article>
+
+            <article>
+                <img src="">
+                <h4></h4>
+            </article>
+
+            <article>
+                <img src="">
+                <h4></h4>
+            </article>
+
+            <article>
+                <img src="">
+                <h4></h4>
+            </article>
+
+        </section>
+        <footer>
+            <address></address>
+            <address></address>
+        </footer>
+    </div>
+    
+</body>
+</html>
